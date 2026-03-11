@@ -1,0 +1,43 @@
+.services-container {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+  padding: 0px; /* padding pour créer de l'espace autour du contenu */
+  min-height: 500px;
+
+}
+
+.service-item {
+ flex: 1;
+ display: flex;
+ align-items: start;
+ justify-content: end;
+ flex-direction: column;
+ height: 100%;
+ padding: 10px 30px;
+ box-sizing: border-box;
+ background-image: url(images/overview_img/coupe1.jpg);
+ background-size: cover;
+ background-position: center;
+}
+
+.service-item p {
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.service-item h4 {
+  display: none;  
+}
+
+.service-item a {
+  display: none;  
+}
+
+.service-item:hover h4 {
+  display: flex;
+}
+.service-item:hover a {
+  display: flex;
+}

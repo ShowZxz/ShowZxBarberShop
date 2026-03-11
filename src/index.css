@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "Moret";
+  src: url("./assets/fonts/Moret-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+:root {
+
+  /* Font rendering / wtf is that */
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Colors */
+
+  --primary: #A85751;
+  --secondary: #361D2E;
+  --secondaryblur: #361d2e33;
+  --tertiary: #D4AF7F;
+  --accent: #CEEAF7;
+  --cta: #51513D;
+  --black: #030712;
+
+
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: var(--tertiary);
+}
+
+
+button {
+
+}
+button:hover {
+
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+/* Default styles for the application */
+
+body {
+  font-size: 20px;
+  font-family: "Moret", serif;
+}
+
+h1 {
+  font-size: 72px;
+  line-height: 86px;
+  color: white;
+}
+
+h2 {
+  font-size: 56px;
+  line-height: 68px;
+  color: white;
+}
+
+h3 {
+  font-size: 40px;
+  line-height: 48px;
+  color: white;
+}
+
+h4 {
+  font-size: 32px;
+  line-height: 46px;
+  color: white;
+}
+
+h5 {
+  font-size: 24px;
+  line-height: 34px;
+  color: white;
+}
+
+h6 {
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
