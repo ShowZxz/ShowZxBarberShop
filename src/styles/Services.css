@@ -1,0 +1,124 @@
+.services-page-header {
+  background: url("/images/services_img/background_services.jpg") center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.services-page-header h1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 100px;
+}
+
+.services-page-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: center;
+}
+
+.service-page-card {
+  position: relative;
+  width: 250px;
+  height: 320px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.service-page-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-page-card h2 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  z-index: 2;
+  font-size: 1.5rem;
+  transition: transform 0.3s;
+}
+
+.service-page-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.8),
+    rgba(0,0,0,0.2)
+  );
+  z-index: 1;
+}
+
+.service-page-card:hover img {
+  transform: scale(1.1);
+}
+
+.service-page-card:hover h2 {
+  transform: translateY(-10px);
+}
+
+.services-page-container{
+    text-align: center;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.category-block {
+  background: #111;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+.category-block h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d4af37;
+  padding-bottom: 10px;
+}
+
+.service-page-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.service-page-item:hover {
+  color: #d4af37;
+}
+
+@media (max-width: 768px) {
+
+  .services-page-header {
+    height: auto;
+    padding: 60px 20px;
+  }
+
+  .service-page-card {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .categories-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

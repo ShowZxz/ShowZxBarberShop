@@ -1,20 +1,37 @@
 import "../styles/CompGalerie.css";
+import { useState } from "react";
 
 function CompGalerie() {
+  const [selected, setSelected] = useState(null);
+
+  const images = [
+    "/images/gallery/1.jpg",
+    "/images/gallery/2.jpg",
+    "/images/gallery/3.jpg",
+    "/images/gallery/4.jpg",
+    "/images/gallery/5.jpg",
+    "/images/gallery/6.jpg",
+    "/images/gallery/7.jpg",
+    "/images/gallery/8.jpg",
+    "/images/gallery/9.jpg",
+  ];
+
   return (
-    <div className="gallery-container">
-      <img src="/images/gallery/1.jpg" className="g1" />
-      <img src="/images/gallery/2.jpg" className="g2" />
-      <img src="/images/gallery/3.jpg" className="g3" />
+    <>
+      <div className="gallery-container">
+        {images.map((img, index) => (
+          <div key={index} className="gallery-item">
+            <img src={img} onClick={() => setSelected(img)} />
+          </div>
+        ))}
+      </div>
 
-      <img src="/images/gallery/4.jpg" className="g4" />
-      <img src="/images/gallery/5.jpg" className="g5" />
-
-      <img src="/images/gallery/6.jpg" className="g6" />
-      <img src="/images/gallery/7.jpg" className="g7" />
-      <img src="/images/gallery/8.jpg" className="g8" />
-    </div>
+      {selected && (
+        <div className="lightbox" onClick={() => setSelected(null)}>
+          <img src={selected} />
+        </div>
+      )}
+    </>
   );
 }
-
 export default CompGalerie;

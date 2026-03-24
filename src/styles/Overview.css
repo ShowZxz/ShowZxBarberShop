@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 0px;
   padding: 50px; /* padding pour créer de l'espace autour du contenu */
-  background-color: azure;
+  background-color: var(--tertiary);
 }
 
 .grid-row {
