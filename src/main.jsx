@@ -10,6 +10,8 @@ import CompFooter from './components/CompFooter.jsx'
 import CompGalerie from './components/CompGalerie.jsx'
 import CompGalerieHeader from './components/CompGalerieHeader.jsx'
 import Services from './pages/Services.jsx'
+import ContactUs from './pages/ContactUs.jsx'
+import AboutUs from './pages/AboutUs.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -22,5 +24,7 @@ createRoot(document.getElementById('root')).render(
     <CompContact />
     <CompFooter />
     <Services />
+    <ContactUs />
+    <AboutUs />
   </StrictMode>,
 )

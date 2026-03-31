@@ -1,0 +1,46 @@
+.contactus-container {
+  display: flex;
+  min-height: 80vh;
+}
+
+.contactus-image {
+  flex: 1;
+}
+
+.contactus-image img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+.form-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-contactus {
+  width: 80%;
+  max-width: 400px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 12px;
+  background: #111;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
