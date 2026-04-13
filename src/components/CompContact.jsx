@@ -1,5 +1,58 @@
 import "../styles/CompContact.css";
 
+
+const horaires = [
+    {
+      jour: "Lundi",
+      open: "Ouverture",
+      heuresOpen: "Fermé",
+      heuresClose: "Fermé",
+      close: "Fermeture",
+    },
+    {
+      jour: "Mardi",
+      open: "Ouverture",
+      heuresOpen: "10:00",
+      heuresClose: "19:00",
+      close: "Fermeture",
+    },
+    {
+      jour: "Mercredi",
+      open: "Ouverture",
+      heuresOpen: "10:00",
+      heuresClose: "19:00",
+      close: "Fermeture",
+    },
+    {
+      jour: "Jeudi",
+      open: "Ouverture",
+      heuresOpen: "10:00",
+      heuresClose: "19:00",
+      close: "Fermeture",
+    },
+    {
+      jour: "Vendredi",
+      open: "Ouverture",
+      heuresOpen: "10:00",
+      heuresClose: "19:00",
+      close: "Fermeture",
+    },
+    {
+      jour: "Samedi",
+      open: "Ouverture",
+      heuresOpen: "10:00",
+      heuresClose: "18:00",
+      close: "Fermeture",
+    },
+    {
+      jour: "Dimanche",
+      open: "Ouverture",
+      heuresOpen: "12:00",
+      heuresClose: "18:00",
+      close: "Fermeture",
+    },
+  ];
+
 function CompContact() {
     return(
     <div className="contact-container">
@@ -30,8 +83,13 @@ function CompContact() {
                 </div>
                 <div className="contact-content-info-hours">
                     <h3>Nos Horaires</h3>
-                    <p>Lundi - Vendredi: 9h00 - 18h00</p>
-                    <p>Samedi: 10h00 - 16h00</p>
+                    <ul>
+                        {horaires.map((horaire, index) => (
+                            <li key={index}>
+                                <strong>{horaire.jour}:</strong> {horaire.open} {horaire.heuresOpen} - {horaire.heuresClose} {horaire.close}
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </div>
         </div>

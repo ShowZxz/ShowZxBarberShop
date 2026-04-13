@@ -51,7 +51,7 @@ function Services() {
         </div>
       </div>
       
-      <h1>Nos Tarifs</h1>
+      <h1 className="services-header-tarifs">Nos Tarifs</h1>
 
       <div className="categories-container">
         {Object.entries(categories).map(([category, services]) => (

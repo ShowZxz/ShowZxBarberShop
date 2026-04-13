@@ -44,7 +44,7 @@ nav li:last-child {
 
 /* Bouton a fix*/
 .btn-phone {
-  background-color: var(--cta);
+  background-color: var(--primary);
   color: white;
   border: none;
   padding: 10px 20px;

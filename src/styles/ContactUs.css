@@ -7,6 +7,17 @@
   flex: 1;
 }
 
+.contactus-header-container h1 {
+  color: var(--black);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.contactus-header-container p {
+  color: var(--primary);
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
 .contactus-image img {
   width: 100%;
   height: 70%;
@@ -28,6 +39,11 @@
 .form-group {
   display: flex;
   flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.form-header-text {
+  color: var(--black);
   margin-bottom: 20px;
 }
 

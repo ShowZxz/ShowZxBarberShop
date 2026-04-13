@@ -7,7 +7,7 @@ function ContactUs() {
     <>
     <div className="contactus-header-container">
         <h1>Prendre Contact Avec Nous</h1>
-        <p>ghbezsfhuyszqbfusdbfusdbhffbshbdfudsfhbfdsdfbh</p>
+        <p>N'hésitez pas à nous contacter pour toute question</p>
     </div>
 
     <div className="contactus-container">

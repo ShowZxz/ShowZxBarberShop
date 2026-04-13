@@ -48,7 +48,7 @@ function CompTeams() {
 
         <div className="teams-header">
             <div className="teams-header-text">
-                <h6>Rencontrez</h6>
+                <h6>° Rencontrez</h6>
                 <h2>Meilleur Équipe de Barbiers</h2>
             </div>
             <div className="teams-header-sidetext">

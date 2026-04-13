@@ -9,13 +9,25 @@
     background-color: #030712;
     color: white;
     text-align: center;
+    
 }
 
 .footer-link {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    padding: 20px;
 }
+.footer-social img {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-social a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
 
 
 
