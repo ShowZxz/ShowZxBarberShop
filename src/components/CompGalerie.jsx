@@ -1,5 +1,6 @@
 import "../styles/CompGalerie.css";
 import { useState } from "react";
+import CompGalerieHeader from '../components/CompGalerieHeader.jsx';
 
 function CompGalerie() {
   const [selected, setSelected] = useState(null);
@@ -18,6 +19,8 @@ function CompGalerie() {
 
   return (
     <>
+    <CompGalerieHeader />
+
       <div className="gallery-container">
         {images.map((img, index) => (
           <div key={index} className="gallery-item">

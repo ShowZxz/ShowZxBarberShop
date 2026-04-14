@@ -1,5 +1,7 @@
 import "../styles/ContactUs.css";
 
+import CompFooter from "../components/CompFooter";
+
 const image = "/images/gallery/1.jpg";
 
 function ContactUs() {
@@ -41,6 +43,7 @@ function ContactUs() {
       </div>
 
     </div>
+    <CompFooter />
     </>
   );
 }

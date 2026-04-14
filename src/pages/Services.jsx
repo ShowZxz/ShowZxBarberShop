@@ -1,5 +1,7 @@
 import "../styles/Services.css";
 
+import CompFooter from "../components/CompFooter";
+
 const categories = {
   Cheveux: [
     { name: "Coupe tondeuse", price: "15€" },
@@ -36,6 +38,7 @@ const categoriesImages = {
 
 function Services() {
   return (
+    <>
     <div className="services-page-container">
       <div className="services-page-header">
         <h1>Nos Services</h1>
@@ -68,6 +71,8 @@ function Services() {
         ))}
       </div>
     </div>
+    <CompFooter />
+    </>
   );
 }
 

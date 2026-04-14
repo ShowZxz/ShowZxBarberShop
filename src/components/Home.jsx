@@ -2,10 +2,19 @@ import '../styles/Home.css'
 
 import { FaFacebookF, FaInstagram, FaSnapchatGhost } from "react-icons/fa";
 
+import Overview from '../components/Overview.jsx'
+import CompServices from '../components/CompServices.jsx';
+import CompTeams from '../components/CompTeams.jsx';
+import CompContact from '../components/CompContact.jsx';
+import CompFooter from '../components/CompFooter.jsx';
+import CompGalerie from '../components/CompGalerie.jsx';
+
+
 function Home() {
 
 
   return (
+    <>
     <div className="home-container">
 
         <div className="home">
@@ -27,7 +36,16 @@ function Home() {
             </p>
             
         </div>
-    </div>    
+    </div> 
+
+    <Overview />
+    <CompServices />
+    <CompTeams />
+    <CompGalerie />
+    <CompContact />
+    <CompFooter />
+
+    </>  
   );
 
 
