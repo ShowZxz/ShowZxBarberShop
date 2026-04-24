@@ -5,7 +5,7 @@ function CompFooter() {
   return (
     <div className="footer-container">
       <div className="footer-link">
-        <h5>Liens Utiles</h5>
+        <h3>Liens Utiles</h3>
         <a href="#">Services</a>
         <a href="#">Mentions Légales</a>
         <a href="#">Politique de Confidentialité</a>
@@ -29,9 +29,15 @@ function CompFooter() {
 
       <div className="footer-contact">
         <h3>Contactez-Nous</h3>
-        <p><a href="mailto:adressemail@exemple.com">Email: adressemail@exemple.com</a></p>
-        <p><a href="tel:+33123456789">Téléphone: +33 1 23 45 67 89</a></p>
-        <p><a href="https://www.google.com/maps/dir/?api=1&destination=123+Rue+du+Commerce,+75001+Paris,+France">Adresse: 123 Rue du Commerce, 75001 Paris, France</a></p>
+        <a href="mailto:adressemail@exemple.com" target="_blank" rel="noopener noreferrer">
+          Email: adressemail@exemple.com
+        </a>
+        <a href="tel:+33123456789" target="_blank" rel="noopener noreferrer">
+          Téléphone: +33 1 23 45 67 89
+        </a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=123+Rue+du+Commerce,+75001+Paris,+France" target="_blank" rel="noopener noreferrer">
+          Adresse: 123 Rue du Commerce, 75001 Paris, France
+        </a>
       </div>
     </div>
   );

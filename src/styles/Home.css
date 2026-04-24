@@ -5,12 +5,12 @@
   padding: 0 50px;
   gap: 100px;
   min-height: 100vh;
+  box-sizing: border-box;
 
   background-image: url(images/salon.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 .home {
@@ -25,6 +25,7 @@
   color: white;
   line-height: 1.6;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
 }
 
 .highlight {
@@ -36,14 +37,14 @@
 .upline {
   width: 40px;
   rotate: 90deg;
-  fill:aqua;
+  fill: aqua;
   color: var(--accent);
 }
 
 .downline {
   width: 40px;
   rotate: -90deg;
-  fill:aqua;
+  fill: aqua;
   color: var(--accent);
 }
 
@@ -58,4 +59,88 @@
 .icon:hover {
   fill: #d4af37;
   transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .home-container {
+    padding: 0 30px;
+    gap: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 20px;
+    gap: 40px;
+    height: auto;
+  }
+
+  .home {
+    order: 2;
+    flex-direction: row;
+  }
+
+  .upline {
+    width: 40px;
+    rotate: 0deg;
+    color: var(--accent);
+  }
+
+  .downline {
+    width: 40px;
+    rotate: 180deg;
+    color: var(--accent);
+  }
+
+
+  .home-text {
+    order: 1;
+    text-align: center;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  .home-text h4 {
+    font-size: 1rem;
+  }
+
+  .home-text h1 {
+    font-size: 2rem;
+  }
+
+  .home-text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-container {
+    padding: 80px 15px;
+    gap: 30px;
+  }
+
+  .home-text h1 {
+    font-size: 1.5rem;
+  }
+
+  .home-text h4 {
+    font-size: 0.9rem;
+  }
+
+  .home-text p {
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .upline,
+  .downline {
+    width: 30px;
+  }
 }

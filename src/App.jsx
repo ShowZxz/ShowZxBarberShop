@@ -12,7 +12,7 @@ function App() {
   return (
     <BrowserRouter>
 
-      <div className="hero-section">
+      
 
         <NavBar />
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/contact" element={<ContactUs />} />
         </Routes>
 
-      </div>
+
 
     </BrowserRouter>
   )

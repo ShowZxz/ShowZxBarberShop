@@ -61,6 +61,7 @@
 
 .services-header-tarifs {
   color: var(--black);
+  margin-top: 70px;
 }
 
 .service-page-card:hover img {
@@ -81,6 +82,8 @@
   gap: 40px;
   justify-content: center;
   padding: 40px 20px;
+  min-height: 70vh;
+  align-items: center;
 }
 
 .category-block {
@@ -89,6 +92,7 @@
   padding: 30px;
   border-radius: 10px;
   width: 300px;
+  height: 300px;
 }
 
 .category-block h2 {

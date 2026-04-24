@@ -1,7 +1,10 @@
+
+
 .contactus-container {
   display: flex;
-  min-height: 70vh;
+  min-height: 40vh;
   background-color: aliceblue;
+  padding-top: 50px;
 }
 
 .contactus-image {
@@ -10,7 +13,7 @@
 
 .contactus-header-container {
   background-color: aliceblue;
-  padding: 10px;
+  padding-top: 100px;
 }
 
 .contactus-header-container h1 {
@@ -64,4 +67,73 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .contactus-container {
+    flex-direction: column;
+    padding-top: 50px;
+    min-height: auto;
+  }
+
+  .contactus-header-container {
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .contactus-header-container h1 {
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .contactus-header-container p {
+    margin-left: 0;
+    font-size: 1rem;
+  }
+
+  .contactus-image {
+    order: 2;
+  }
+
+  .contactus-image img {
+    height: 30vh;
+  }
+
+  .form-container {
+    order: 1;
+    padding: 20px;
+  }
+
+  .form-contactus {
+    width: 100%;
+    max-width: none;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  input, textarea {
+    padding: 8px;
+  }
+
+  button {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .contactus-header-container h1 {
+    font-size: 1.2rem;
+  }
+
+  .contactus-header-container p {
+    font-size: 0.9rem;
+  }
+
+  .form-header-text {
+    font-size: 1.2rem;
+  }
 }
