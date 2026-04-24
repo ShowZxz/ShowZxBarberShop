@@ -1,0 +1,38 @@
+.btn-scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary);
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+}
+
+.btn-scroll-to-top:hover {
+    background-color: var(--secondary);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-scroll-to-top img {
+    width: 24px;
+    height: 24px;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+
+    .btn-scroll-to-top {
+        width: 40px;
+        height: 40px;
+        right: 50%;
+        transform: translateX(50%);
+
+    }
+
+    .btn-scroll-to-top img {
+        width: 20px;
+        height: 20px;
+    }
+
+}
