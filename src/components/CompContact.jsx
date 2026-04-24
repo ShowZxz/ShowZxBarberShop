@@ -75,11 +75,13 @@ function CompContact() {
             <div className="contact-content-info">
                 <div className="contact-content-info-location">
                     <h3>Notre Emplacement</h3>
-                    <p>123 Rue du Commerce, 75001 Paris, France</p>
+                            <a href="https://www.google.com/maps/dir/?api=1&destination=3+Pl.+du+14+Juillet,+91270+Vigneux-sur-Seine" target="_blank" rel="noopener noreferrer">
+          3 Pl. du 14 Juillet, 91270 Vigneux-sur-Seine
+        </a>
                 </div>
                 <div className="contact-content-info-phone">
                     <h3>Numéro de Téléphone</h3>
-                    <p>+33 1 23 45 67 89</p>
+                    <a href="tel: 0187900597">01 87 90 05 97</a>
                 </div>
                 <div className="contact-content-info-hours">
                     <h3>Nos Horaires</h3>

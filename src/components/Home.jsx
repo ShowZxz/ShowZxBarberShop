@@ -19,9 +19,9 @@ function Home() {
 
         <div className="home">
             <img src='/images/svgs/line.svg' alt="upline_icon" className="upline" />
-            <a href="#"><FaFacebookF className="icon" /></a>
-            <a href="#"><FaInstagram className="icon" /></a>
-            <a href="#"><FaSnapchatGhost className="icon" /></a>
+            <a href="https://www.facebook.com/Le-Binks-Barbershop-100054430001781" target="_blank" rel="noopener noreferrer"><FaFacebookF className="icon" /></a>
+            <a href="https://www.instagram.com/lebinks.barber" target="_blank" rel="noopener noreferrer"><FaInstagram className="icon" /></a>
+            <a href="https://snapchat.com/add/lebinks.barber" target="_blank" rel="noopener noreferrer"><FaSnapchatGhost className="icon" /></a>
             <img src='/images/svgs/line.svg' alt="downline" className="downline" />
         </div>
 
