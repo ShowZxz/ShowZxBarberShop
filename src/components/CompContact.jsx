@@ -54,7 +54,7 @@ const horaires = [
 
 function CompContact() {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id="contact-section">
       <div className="contact-header">
         <div className="contact-header-text">
           <h6>Nous Contacter</h6>
@@ -91,12 +91,18 @@ function CompContact() {
           <div className="contact-content-info-hours">
             <h3>Nos Horaires</h3>
             <ul>
-              {horaires.map((horaire, index) => (
-                <li key={index}>
-                  <strong>{horaire.jour}:</strong> {horaire.open}{" "}
-                  {horaire.heuresOpen} - {horaire.heuresClose} {horaire.close}
-                </li>
-              ))}
+              {horaires.map((horaire, index) => {
+                const horaireTexte = horaire.heuresOpen === "Fermé"
+                  ? "Fermé"
+                  : `${horaire.heuresOpen} - ${horaire.heuresClose}`;
+
+                return (
+                  <li key={index}>
+                    <strong>{horaire.jour}</strong>
+                    <span>{horaireTexte}</span>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

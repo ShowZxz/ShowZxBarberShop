@@ -26,15 +26,17 @@ function Home() {
         </div>
 
         <div className="home-text">
-            <h4>Bienvenue chez <span className="highlight">ShowZx BarberShop</span></h4>
-            <h1>Barber<br></br>shop</h1>
-            <p><strong>
-                Post quorum necem nihilo lenius ferociens Gallus ut leo 
-                cadaveribus pastus multa huius modi scrutabatur. quae singula narrare non refert, 
-                me professione modum, quod evitandum est, excedamus.
-                </strong>
-            </p>
-            
+          <div className="hero-badge">Soin • Style • Tradition</div>
+          <h4>Bienvenue chez <span className="highlight">ShowZx BarberShop</span></h4>
+          <h1>Barber<br />shop</h1>
+          <p>
+            <strong>
+              Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus
+              multa huius modi scrutabatur. Quae singula narrare non refert, me professione modum,
+              quod evitandum est, excedamus.
+            </strong>
+          </p>
+          <a href="#contact-section" className="cta-button">Nous contacter</a>
         </div>
     </div> 
 

@@ -26,19 +26,21 @@
   margin-bottom: 20px;
 }
 
-.service-item h4 {
-  display: none;  
-}
-
+.service-item h4,
 .service-item a {
-  display: none;  
+  opacity: 0;
+  transform: translateY(12px);
+  visibility: hidden;
+  display: block;
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0s linear 0.35s;
 }
 
-.service-item:hover h4 {
-  display: flex;
-}
+.service-item:hover h4,
 .service-item:hover a {
-  display: flex;
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  transition: opacity 0.35s ease, transform 0.35s ease, visibility 0s linear 0s;
 }
 
 
@@ -79,12 +81,12 @@
     display: none;
   }
 
-  .service-item h4 {
-    display: flex;
-  }
-
+  .service-item h4,
   .service-item a {
-    display: flex;
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+    display: block;
   }
 }
 

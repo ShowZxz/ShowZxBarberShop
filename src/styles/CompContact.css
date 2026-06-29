@@ -11,15 +11,16 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 0px;
-    min-height: 400px;
+    min-height: 300px;
     padding: 20px 10px;
     gap: 0px;
     color: var(--black);
-    background-color: whitesmoke;
+    background-color: var(--black);
+    color: white;
 }
 
 .contact-header h2 {
-    color: var(--black);
+    color: white;
   }
 
 .contact-header h6 {
@@ -34,6 +35,7 @@
     justify-content: start;
     align-items: start;
     gap: 20px;
+    
 
 }
 
@@ -55,21 +57,34 @@
 
 .contact-content {
   display: flex;
+  flex-wrap: wrap;
   width: 100%;
   min-height: 500px;
+  gap: 20px;
   color: white;
+  align-items: stretch;
+}
+
+.contact-content-image,
+.contact-content-info {
+  min-width: 0;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .contact-content-image {
-  flex: 7; /* 70% */
-  height: 700px;
+  flex: 1 1 420px;
+  min-height: 500px;
+  align-self: stretch;
 }
 
 .contact-content-info {
-  flex: 3; /* 30% */
-  display: flex;
-  flex-wrap: wrap;
-  padding: 30px;
+  flex: 1 1 320px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  padding: 16px 10px;
+  box-sizing: border-box;
 }
 
 .contact-content-info h3{
@@ -84,49 +99,112 @@
 }
 
 .contact-content-info-location,
-.contact-content-info-phone {
-  width: 50%;
+.contact-content-info-phone,
+.contact-content-info-hours {
+  width: 100%;
 }
 
 .contact-content-info-hours {
-  width: 100%;
-  margin-top: 20px;
+  margin: 20px auto 0;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 20px;
+  padding: 22px;
+  width: min(520px, 100%);
+  max-width: 100%;
+  grid-column: 1 / -1;
+  justify-self: center;
+  box-sizing: border-box;
+}
+
+.contact-content-info-hours h3 {
+  display: flex;
+  margin-bottom: 18px;
+  justify-content: center;
 }
 
 .contact-content-info-hours ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 20px;
+  width: 100%;
+  min-width: 0;
 }
+
 
 .contact-content-info-hours li {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  display: grid;
+  gap: 6px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   color: white;
   font-size: 0.95rem;
+  line-height: 1.6;
+  min-width: 0;
 }
 
+.contact-content-info-hours li:last-child {
+  border-bottom: none;
+}
 
 .contact-content-info-hours li strong {
-  font-weight: 500;
-}
-
-.contact-content-info-hours li:hover {
+  font-weight: 700;
   color: var(--tertiary);
 }
 
-@media (max-width: 768px) {
+.contact-content-info-hours li span {
+  color: rgba(255,255,255,0.88);
+}
 
+.contact-content-info-location a,
+.contact-content-info-phone a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(212,175,127,0.5);
+}
+
+.contact-content-info-location a:hover,
+.contact-content-info-phone a:hover {
+  color: var(--tertiary);
+  border-color: var(--tertiary);
+}
+
+@media (max-width: 1024px) {
+  .contact-content-info {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+
+  .contact-content-info-hours ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
   .contact-content {
     flex-direction: column;
   }
 
-  .contact-content-info-location,
-  .contact-content-info-phone,
-  .contact-content-info-hours {
+  .contact-content-image {
+    min-height: 320px;
     width: 100%;
   }
 
+  .contact-content-info {
+    padding: 12px;
+  }
+
+  .contact-content-info-hours {
+    margin-top: 10px;
+    padding: 18px;
+  }
+
+  .contact-content-info-hours ul {
+    grid-template-columns: 1fr;
+  }
 }

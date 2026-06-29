@@ -55,29 +55,40 @@ nav li:first-child {
 }
 
 
-/* Bouton a fix*/
+/* Bouton téléphone */
 .btn-phone {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  background: linear-gradient(135deg, rgba(168, 87, 81, 0.95), rgba(121, 45, 38, 0.95));
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 999px;
+  padding: 0.95rem 1.5rem;
   cursor: pointer;
-  border-style: solid;
-  border-top-width: 3px;
-  border-right-width: 3px;
-  border-left-width: 3px;
-  border-bottom-width: 3px;
-  padding-top: 18px;
-  padding-right: 25px;
-  padding-bottom: 18px;
-  padding-left: 25px;
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
+  transition: transform 0.24s ease, box-shadow 0.24s ease, background 0.24s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 600;
 }
 
+.btn-phone:hover {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.22);
+  background: linear-gradient(135deg, rgba(191, 108, 98, 0.98), rgba(146, 66, 54, 0.98));
+}
+
+.btn-phone:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.8);
+  outline-offset: 3px;
+}
+
+.btn-phone a {
+  color: inherit;
+  text-decoration: none;
+}
 
 nav .logo {
   height: 100px;
@@ -90,8 +101,8 @@ nav .logo {
   top: 0;
   right: -200%;
   width: 260px;
-  height: 100%;
-  background-color: var(--secondaryblur);
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.664);
   backdrop-filter: blur(10px);
   transition: right 0.3s ease;
 
@@ -99,7 +110,7 @@ nav .logo {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  justify-content: start;
+  justify-content: center;
   z-index: 999;
 }
 
@@ -154,6 +165,16 @@ nav .logo {
   .menu-button {
     display: block;
   }
+
+  nav li:first-child {
+  margin-right: 0px;
+}
+
+  nav li:last-child {
+    margin-left: 40px;
+  }
+
+
 
 nav ul {
   width: 100%;

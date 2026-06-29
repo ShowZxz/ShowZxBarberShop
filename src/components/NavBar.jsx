@@ -15,7 +15,7 @@ function NavBar() {
         </li>
 
         <li onClick={() => setIsOpen(false)}>
-          <img src="/images/svgs/close.svg" alt="Menu" className="close-icon" />
+          <img src="/images/close-b.png" alt="Menu" className="close-icon" />
         </li>
 
         <li>
@@ -40,7 +40,7 @@ function NavBar() {
         </li>
 
         <li>
-          <button className="btn-phone">01.87.90.05.97</button>
+          <button className="btn-phone"><a href="tel: 0187900597">01.87.90.05.97</a></button>
         </li>
       </ul>
 
@@ -69,12 +69,12 @@ function NavBar() {
         <li className="hideOnMobile">
           <button className="btn-phone ">
             {" "}
-            <a href="tel: 0187900597">Téléphone</a>
+            <a href="tel: 0187900597">01.87.90.05.97</a>
           </button>
         </li>
 
         <li className="menu-button" onClick={() => setIsOpen(true)}>
-          <img src="/images/svgs/burger.svg" alt="Menu" className="menu-icon" />
+          <img src="/images/menu-b.png" alt="Menu" className="menu-icon" />
         </li>
       </ul>
     </nav>

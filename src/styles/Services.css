@@ -60,8 +60,9 @@
 }
 
 .services-header-tarifs {
-  color: var(--black);
-  margin-top: 70px;
+  color: white;
+  padding-top: 70px;
+  background-color: var(--secondary);
 }
 
 .service-page-card:hover img {
@@ -84,6 +85,7 @@
   padding: 40px 20px;
   min-height: 70vh;
   align-items: center;
+  background-color: var(--secondary);
 }
 
 .category-block {
@@ -97,7 +99,7 @@
 
 .category-block h2 {
   margin-bottom: 20px;
-  border-bottom: 2px solid #d4af37;
+  border-bottom: 2px solid var(--tertiary);
   padding-bottom: 10px;
 }
 
@@ -109,14 +111,14 @@
 }
 
 .service-page-item:hover {
-  color: #d4af37;
+  color: var(--tertiary);
 }
 
 @media (max-width: 768px) {
 
   .services-page-header {
     height: auto;
-    padding: 60px 20px;
+    padding: 80px 20px;
   }
 
   .service-page-card {
